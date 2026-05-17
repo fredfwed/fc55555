@@ -5,20 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website!</title>
   <style>
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background-color: turquoise;
-    }
-    .page {
-      min-height: 100%;
-      display: flex;
-      flex-direction: column;
+      background-color: rgb(16, 80, 73);
     }
     .centered-text {
-      flex: 1;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -29,45 +21,15 @@
       text-align: center;
       line-height: 1.2;
     }
-    .footer {
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.2);
-      color: white;
-      font-family: 'Arial', sans-serif;
-      font-size: 16px;
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-    }
   </style>
 </head>
 <body>
-  <div class="page">
-    <div class="centered-text" style="--text-size: 48px;">
-      <div>Hi</div>
-      <div>Discord: fc01857</div>
-      <!-- add more lines by copying another <div> line here -->
-    </div>
+  <div class="centered-text" style="--text-size: 48px;">
+    <div>Hi</div>
+    <div>Discord: fc01857</div>
+    <!-- add more lines by copying another <div> line here -->
   </div>
-  <div class="footer" id="visitor-counter">Unique visitors: loading...</div>
-  <script>
-    (function() {
-      var storage = window.localStorage;
-      var visited = storage.getItem('website-unique-visitor');
-      var count = parseInt(storage.getItem('website-visitor-count') || '0', 10);
-      if (!visited) {
-        count = count + 1;
-        storage.setItem('website-visitor-count', String(count));
-        storage.setItem('website-unique-visitor', 'true');
-      }
-      document.getElementById('visitor-counter').textContent =
-        'Visitors: ' + count;
-    })();
-  </script>
 </body>
 </html>
+
 
