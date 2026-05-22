@@ -34,6 +34,25 @@
     src="//gc.zgo.at/count.js">
   </script>
 
+  <script>
+    // Append to the <body>; can use a CSS selector to append somewhere else.
+    window.goatcounter.visit_count({append: 'body'})
+</script>
+<script data-goatcounter="https://fredyc.goatcounter.com/count"
+        async src="//gc.zgo.at/script.js"></script>
+
+        <script>
+    var t = setInterval(function() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+            clearInterval(t)
+            window.goatcounter.visit_count({append: 'body'})
+        }
+    }, 100)
+</script>
+<script data-goatcounter="https://fredyc.goatcounter.com/count"
+        async src="//gc.zgo.at/script.js"></script>
+
+
 
 </head>
 <body>
@@ -42,8 +61,8 @@
     <div>Discord: @fcfcfcabc</div>
     <!-- add more lines by copying another <div> line here -->
   </div>
-  <div style="position: fixed; bottom: 10px; font-family: 'Times New Roman', serif; font-size: 12px; color: white;">
-    Last Updated 5/21/2026
+  <div style="position: fixed; top: 10px; font-family: 'Times New Roman', serif; font-size: 12px; color: white;">
+    Last Updated 5/21/2026. Changelog: integrated GoatCounter, replacing Bravenet, for site statistics.
   </div>
 </body>
 </html>
